@@ -9,11 +9,22 @@
 
 - [Installation](#installation)
 - [License](#license)
+- [Usage](#usage)
 
 ## Installation
 
 ```console
 pip install dsn6file
+```
+
+## Usage
+
+At the moment the library only supports reading dsn6 files, but not writing them.
+
+```python
+from dsn6file import DSN6File
+dsn6 = DSN6File(test_data_directory / "6c10_2fofc.dsn6")
+dsn6_data = dsn6.get_data()
 ```
 
 ## License
